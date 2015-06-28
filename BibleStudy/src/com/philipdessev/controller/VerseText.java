@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.philipdessev.model.Verse;
 
 @Controller
-public class BibleText {
+public class VerseText {
 
 	@RequestMapping(value="/getVerses", method=RequestMethod.GET)
 	public @ResponseBody String getVerses(

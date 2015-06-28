@@ -2,6 +2,8 @@ package com.philipdessev.model;
 
 import java.io.Serializable;
 import java.util.List;
+import com.philipdessev.basex.*;
+
 
 public class Verse implements Serializable{
 
@@ -31,7 +33,7 @@ public class Verse implements Serializable{
 	
 	public static void setContent(List<Verse> verses) {
 		for(Verse verse : verses){
-			//verse.setText(verse.getOSISID());
+			verse.setText(BibleText.getText(verse.getOSISID()));
 			verse.setText("set");
 		}	
 	}
