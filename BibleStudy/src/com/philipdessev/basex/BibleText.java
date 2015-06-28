@@ -1,6 +1,6 @@
 package com.philipdessev.basex;
 
-// this method shoud
+// this method should be aware of the bible version
 public class BibleText {
 
 	public static String getText(String osisid) {

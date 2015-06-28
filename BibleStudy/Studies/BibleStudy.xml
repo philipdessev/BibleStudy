@@ -81,20 +81,20 @@
 		<question id="q002">
 			Защо Павел поставя любовта като първи приоритет и цел на своето
 			учителстване?
-			<verse book="Matthew" chapter="22" seq="all" />
+			<verse book="Матей" osis="Mat"  chapter="22" seq="all" />
 		</question>
 		<answer id="q002a001" content="" />
 
 		<question id="q003">
 			Според ст. 8, в контекста на цялата глава, какво означава да се
 			използва закона законно? Как прилагаме този принцип днес?
-			<verse book="Galatians" chapter="3" seq="19-25" />
+			<verse book="Галатяни" osis="Gal" chapter="3" seq="19-25" />
 			,
-			<verse book="Romans" chapter="7" list="7,12" />
+			<verse book="Римляни" osis="Rom"  chapter="7" list="7,12" />
 			Ром 7:7, 12.
 			Нещо повече, как лъжеучителите използват закона
 			неправилно? (Първо според
-			<verse book="1 Timothy" chapter="1" seq="all" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" seq="all" />
 			,
 			а после според личните ви наблюдения в наши дни.)
 		</question>
@@ -110,7 +110,7 @@
 			блажения Бог&quot;?
 			(KJV:
 			&quot;славното Благовестие на блажения Бог.&quot;
-			<verse book="1 Timothy" chapter="1" number="11" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" number="11" />
 			. И двата превода са допустими на съвременен език.)
 		</question>
 		<answer id="q004a001" content="" />
@@ -139,23 +139,22 @@
 
 		<question id="q007">
 			Какво се казва за Евангелието в стихове 12-20?
-			<verse book="1 Timothy" chapter="1" seq="12-20" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" seq="12-20" />
 		</question>
 		<answer id="q007a001" content="" />
 
 
 		<question id="q008">
 			Изредете всички неща които Павел казва за Евангелието в ст.12-20.
-			<verse book="1 Timothy" chapter="1" seq="12-20" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" seq="12-20" />
 		</question>
 		<answer id="q008a001" content="" />
 
 		<question id="q009">
 			Как личното свидетелство на Павел изявява благодатта и милостта на
 			нашия Господ?
-			<verse book="Acts" chapter="9" seq="all" />
-			, (Ср. Деян. 9, Еф. 2:1-10.)
-			<verse book="Ephesians" chapter="2" seq="1-10" />
+			<verse book="Деяния" osis="Acts" chapter="9" seq="all" />
+			, (Ср. <verse book="Деяния" osis="Acts" chapter="9" seq="all" />, <verse book="Ефесяни" osis="Eph" chapter="2" seq="1-10" />.)
 			По-специално, проследете импакта на Божиите благодат и милост върху
 			живота на човека, неговото минало и бъдеще.
 		</question>
@@ -164,7 +163,7 @@
 		<question id="q010">
 			Според казаното от Павел за него си, какво точно е
 			&quot;Благовестието&quot; споменато в
-			<verse book="1 Timothy" chapter="1" number="11" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" number="11" />
 			?
 			Т. е., по какъв начин човек намира милост и спасение?
 		</question>
@@ -175,7 +174,7 @@
 			<verse book="1 Timothy" chapter="1" number="18" />,
 			каква точно е заповедта (&quot;заръката&quot;), която Павел дава на
 			Тимотей (ср. ст. 3-4) ?
-			<verse book="1 Timothy" chapter="1" seq="3-4" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" seq="3-4" />
 		</question>
 		<answer id="q011a001" content="" />
 
@@ -183,11 +182,11 @@
 		<question id="q012">
 			(*) Според ст. 19, как човек може да отхвърли &quot;вярата и чистата
 			съвест&quot;?
-			<verse book="1 Timothy" chapter="1" seq="3-7" />
+			<verse  book="1 Тимотей" osis="1Tim" chapter="1" seq="3-7" />
 			,
-			<verse book="2 Timothy" chapter="1" seq="14-18" />
+			<verse  book="2 Тимотей" osis="2Tim" chapter="1" seq="14-18" />
 			,
-			<verse book="2 Timothy" chapter="1" seq="4-14" />
+			<verse  book="2 Тимотей" osis="2Tim" seq="4-14" />
 			Освен това, какво има предвид Павел използвайки думата
 			&quot;корабокрушение&quot;? Според вас, какво е състоянието на вярата
 			на такива хора?
@@ -197,12 +196,12 @@
 
 		<question id="q013">
 			(*) Какво означава, че тези двама души са предадени на Сатана?
-			<verse book="1 Corinthians" chapter="5" seq="1-5" />
+			<verse book="1 Коринтяни" osis="1Cor" chapter="5" seq="1-5" />
 			Каква е целта на това сурово наказание?
-			<verse book="2 Corinthians" chapter="2" seq="5-8" />
-			<verse book="2 Timothy" chapter="2" seq="24:25" />
-			<verse book="2 Thesalonians" chapter="3" seq="14-15" />
-			<verse book="James" chapter="5" seq="19-20" />
+			<verse book="2 Коринтяни" osis="1Cor" chapter="2" seq="5-8" />
+			<verse  book="2 Тимотей" osis="2Tim" chapter="2" seq="24:25" />
+			<verse book="2 Солунци" osis="2Thess" chapter="3" seq="14-15" />
+			<verse book="Яков" osis="Jas" chapter="5" seq="19-20" />
 			Дали, според Павел, това може да се случва на невярващи или на
 			вярващи?
 		</question>
