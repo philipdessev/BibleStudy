@@ -20,9 +20,6 @@
     <title><xsl:value-of select="/study/title"/></title>
     <!-- Bootstrap core CSS -->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -147,14 +144,14 @@
 	</xsl:template>
 	
 		<xsl:template match="verse">
-		<xsl:text> </xsl:text><a>
+		<xsl:text> </xsl:text><a class="verse">
 		<xsl:attribute name = "href">
 			<xsl:text>http://localhost:8080/getVerseContent</xsl:text>
 			<xsl:text>?book=</xsl:text><xsl:value-of select="@book"/>
-			<xsl:text>?chapter=</xsl:text><xsl:value-of select="@chapter"/>
-			<xsl:text>?number=</xsl:text><xsl:value-of select="@number"/>
-			<xsl:text>?seq=</xsl:text><xsl:value-of select="@seq"/>
-			<xsl:text>?list=</xsl:text><xsl:value-of select="@list"/>
+			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>chapter=</xsl:text><xsl:value-of select="@chapter"/>
+			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>number=</xsl:text><xsl:value-of select="@number"/>
+			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>seq=</xsl:text><xsl:value-of select="@seq"/>
+			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>list=</xsl:text><xsl:value-of select="@list"/>
 		</xsl:attribute>
 		
 		<xsl:value-of select="@book"/><xsl:text> </xsl:text>
