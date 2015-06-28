@@ -34,7 +34,7 @@ public class Verse implements Serializable{
 	public static void setContent(List<Verse> verses) {
 		for(Verse verse : verses){
 			//verse.setText(BibleText.getText(verse.getOSISID()));
-			verse.setText("set");
+			//verse.setText("set");
 		}	
 	}
 	

@@ -61,5 +61,4 @@ public class XMLDataProvider {
 		
 		return doc.getDocumentElement();
 	}
-
 }
