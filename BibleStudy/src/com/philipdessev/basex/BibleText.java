@@ -1,17 +1,17 @@
 package com.philipdessev.basex;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xquery.XQException;
 
 import org.w3c.dom.Node;
-import org.xml.sax.SAXException;
 
-// this class should be aware of the bible version
+
+// this method should be aware of the bible version
+
 public class BibleText {
+
 
 	public static String getText(String osisid)  {
 		
@@ -37,10 +37,11 @@ public class BibleText {
 		
 		return result.get(0);
 		//return "The node content";
+
 	}
+
 	
-public static List<String> getVerseSeq(String osisidStart , String osisidend)  {
-		
+public static List<String> getVerseSeq(String osisidStart , String osisidend)  {		
 		String SelectedBible = "BGVOSIS";
 		String query = 
 				
@@ -49,15 +50,12 @@ public static List<String> getVerseSeq(String osisidStart , String osisidend)  {
 				"return $x";
 		
 		List<String> resultList = new ArrayList<>();
-		
 			try {
 				resultList = new XMLDataProvider().getStringfomXQuery(query);
 			} catch (XQException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		return resultList;
-
 	}
 }
