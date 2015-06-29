@@ -43,7 +43,7 @@ public class HelloController {
 		
 		XMLDataProvider dp = new XMLDataProvider();
 		try{
-			node = dp.getNodefomXQuery(query);
+			node = dp.getNodefomXQuery(query).get(0);
 			domSource.setNode(node);
 		}
 		catch(Exception e){

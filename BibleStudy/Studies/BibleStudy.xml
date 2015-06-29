@@ -81,7 +81,7 @@
 		<question id="q002">
 			Защо Павел поставя любовта като първи приоритет и цел на своето
 			учителстване?
-			<verse book="Матей" osis="Mat"  chapter="22" seq="all" />
+			<verse book="Матей" osis="Matt"  chapter="22" seq="all" />
 		</question>
 		<answer id="q002a001" content="" />
 
@@ -199,7 +199,7 @@
 			<verse book="1 Коринтяни" osis="1Cor" chapter="5" seq="1-5" />
 			Каква е целта на това сурово наказание?
 			<verse book="2 Коринтяни" osis="1Cor" chapter="2" seq="5-8" />
-			<verse  book="2 Тимотей" osis="2Tim" chapter="2" seq="24:25" />
+			<verse  book="2 Тимотей" osis="2Tim" chapter="2" seq="24-25" />
 			<verse book="2 Солунци" osis="2Thess" chapter="3" seq="14-15" />
 			<verse book="Яков" osis="Jas" chapter="5" seq="19-20" />
 			Дали, според Павел, това може да се случва на невярващи или на

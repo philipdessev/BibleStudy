@@ -16,24 +16,16 @@ $(document).ready(function(){
 
 	$("a.verse").click(function(e){
 	 	e.preventDefault();
+	 	 $("div.verses").html("");
 	 	console.log(this.href.split("?")[1]);
 	
 			 	$.getJSON( "getVerses?"+ this.href.split("?")[1] , function(data ) {
 					  //var items = [];
 					 // console.log(data);
 					  $.each( data, function( key, val ) {
-					  
-					  
-					    alert(val.OSISID + ": "+ val.text)
-					 
+					    $("div.verses").append("<div id="+ val.OSISID +">" + val.OSISID.split(".")[2] + ". " + val.text + "</div>");
 					  });
 					 
-					  /*
-					  $( "<ul/>", {
-					    "class": "my-new-list",
-					    html: items.join( "" )
-					  }).appendTo( "body" );
-					  */
 				});
 	 	
 /*

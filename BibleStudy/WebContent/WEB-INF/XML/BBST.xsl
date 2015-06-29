@@ -56,9 +56,12 @@
         </nav>
     </div>
 
-  
+
   
 <div class="container">
+
+  <div class="verses"></div>
+
 <xsl:apply-templates/>
 </div>
 <xsl:call-template name = "scripts"/>
@@ -144,10 +147,10 @@
 	</xsl:template>
 	
 		<xsl:template match="verse">
-		<xsl:text> </xsl:text><a class="verse">
+		<xsl:text> (</xsl:text><a class="verse">
 		<xsl:attribute name = "href">
 			<xsl:text>http://localhost:8080/getVerseContent</xsl:text>
-			<xsl:text>?book=</xsl:text><xsl:value-of select="@book"/>
+			<xsl:text>?book=</xsl:text><xsl:value-of select="@osis"/>
 			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>chapter=</xsl:text><xsl:value-of select="@chapter"/>
 			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>number=</xsl:text><xsl:value-of select="@number"/>
 			<xsl:text disable-output-escaping="yes">&#38;</xsl:text><xsl:text>seq=</xsl:text><xsl:value-of select="@seq"/>
@@ -166,8 +169,13 @@
 			<xsl:value-of select="@seq"/>
 		</xsl:if>
 		
-		</a><xsl:text> </xsl:text>
+		</a><xsl:text>) </xsl:text>
 	</xsl:template>
 
+	<xsl:template match="hi">
+		<i>
+			<xsl:apply-templates/>
+		</i>
+	</xsl:template>
 
 </xsl:stylesheet>
