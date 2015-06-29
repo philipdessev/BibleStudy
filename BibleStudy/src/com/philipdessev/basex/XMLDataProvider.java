@@ -19,12 +19,9 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.json.XML;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -54,10 +51,15 @@ public class XMLDataProvider {
 		return xmlList;
 	}
 
-	public List<Node> getNodefomXQuery(String query) throws XQException, SAXException, IOException, ParserConfigurationException {
+	public List<Node> getNodefomXQuery(String query) throws XQException, ParserConfigurationException, SAXException, IOException  {
+		
+		List<String> xmlList = getStringfomXQuery(query); 
+		return getNodefomXMLList(xmlList);
+	}
+	
+	public List<Node> getNodefomXMLList(List<String> xmlList) throws ParserConfigurationException, SAXException, IOException {
 
 		List<Node> nodeList = new ArrayList<>();
-		List<String> xmlList = getStringfomXQuery(query); 
 		Document doc;
 		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -74,5 +76,4 @@ public class XMLDataProvider {
 		return nodeList;
 	}
 	
-
 }

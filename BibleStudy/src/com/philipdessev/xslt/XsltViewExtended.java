@@ -1,6 +1,6 @@
 package com.philipdessev.xslt;
 
-import java.util.Locale;
+import java.util.Locale; 
 
 public class XsltViewExtended extends org.springframework.web.servlet.view.xslt.XsltView {
 
