@@ -1,1 +1,30 @@
+ @media screen and (min-width: 1200px){
+	.container {
+	  max-width: 1170px;
+	}
+ }
+
+@media screen and (min-width: 992px){
+	.container {
+	  max-width: 970px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.container {
+	  max-width: 750px;
+	}
+}
  
+ 
+ .versesPanel{
+ 	position:fixed;
+ 	right:10px;
+ 	top:50px;
+ 	max-width:200px;
+ 	font-size:12px;
+ }
+ 
+div.verses{
+ 	font-size:12px;
+ }

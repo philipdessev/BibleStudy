@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+
+
+@media screen and (min-width: 1400px){
+	.versesPanel{
+		position:fixed;
+		right:10px;
+		top:70px;
+		height:87%;
+		width:300px;
+		font-size:12px;
+		 overflow: hidden;
+	}
+	
+	.verses{
+		height:90%;
+		display:block;
+	}
+}
