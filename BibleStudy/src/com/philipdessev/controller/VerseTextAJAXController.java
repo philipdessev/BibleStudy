@@ -96,6 +96,7 @@ public class VerseTextAJAXController {
 			for(String verseXML:contentList){
 				try {
 					Verse verse = new Verse();
+					//verse.setContext(null);
 					verse.initVerseFromXMLString(verseXML);
 					verses.add(verse);
 				} catch (ParserConfigurationException | SAXException| IOException e) {
