@@ -3,19 +3,31 @@ body {
 }
 
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 768px){
 	.versesPanel{
 		position:fixed;
 		right:10px;
 		top:70px;
-		height:87%;
 		width:300px;
 		font-size:12px;
 		 overflow: hidden;
 	}
 	
 	.verses{
-		height:90%;
-		display:block;
+		height:80vh;
 	}
 }
+
+	.verses{
+		height:50vh;
+		display:block;
+		overflow-y:auto;
+	}
+	.versesPanel{
+		position:fixed;
+		right:10px;
+		top:70px;
+		width:300px;
+		font-size:12px;
+		overflow: hidden;
+	}

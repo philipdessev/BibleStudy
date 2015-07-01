@@ -68,25 +68,34 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    
-  <div class="container">
+   
+<div class="container">
        
-<div class="row">
- 
-<div class="">  
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">  
+			<xsl:apply-templates/>
+		</div>
+	</div> 
 
-	<xsl:apply-templates/>
-</div>
 
-</div>
+	  
+		  <div class="panel panel-primary versesPanel" style="background-color:#f9f9f9">
+		        <div class="panel-heading panel-title">
+			        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="false" class="clickable">
+			       		<xsl:value-of select="document('Bulgarian.xml')/text/verses"/>
+			       		
+			        </a>
+			        
+			       
+		        
+		        </div>
+		        
+		         <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+		        		<div id="verses" class="panel-body verses"></div>
+		        </div>
+		  </div>
+	</div>
 
-  <div class="panel panel-primary versesPanel" >
-        <div class="panel-heading"><xsl:value-of select="document('Bulgarian.xml')/text/verses"/></div>
-        <div id="verses" class="panel-body verses" style="max-height:10; overflow-y: scroll;" >
-        </div>
-  </div>
-
-</div>
 
 <xsl:call-template name = "scripts"/>
 </body>
@@ -112,6 +121,7 @@
 
 
 <xsl:template match="meta"></xsl:template>
+
 <xsl:template match="question">
 <hr/>
 <div class="well">
