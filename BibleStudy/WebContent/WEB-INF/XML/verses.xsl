@@ -16,16 +16,12 @@
 	
 	
 	<xsl:template match="note[@type = 'footnote']">
-
-		<span style="font-weight:bold; color:#ff0000" >
-		<xsl:attribute name="note">
+		<a style="font-weight:bold; color:#ff0000" class="note red-tooltip" data-container="body">
+		<xsl:attribute name="title">
 			<xsl:apply-templates/>
 		</xsl:attribute>
-		
-		<xsl:text> * </xsl:text>
-		</span>
-			
-		
+		<xsl:text> (*) </xsl:text>
+		</a>
 	</xsl:template>
 	
 
