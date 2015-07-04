@@ -6,6 +6,8 @@
   
 
 <script src="resources/script/jquery-2.1.4.min.js"></script>
+<script src="resources/script/jquery-ui.min.js"></script>
+<script src="resources/script/jquery.ui.touch-punch.min.js"></script>
 <script src="resources/script/bootstrap.min.js"></script>
 
 <script>
@@ -46,12 +48,16 @@ $(document).ready(function(){
 		});
 	});
 	
+		
+	  $("#versesPanel").draggable({
+	    
+	  });
 	
-
-	
-
-	
-	
+	$( window ).resize(function() {
+  		$( "#versesPanel" ).removeAttr( 'style' );
+  	
+	});
+		
 
 });
 ]]>

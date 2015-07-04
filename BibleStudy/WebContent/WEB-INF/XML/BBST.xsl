@@ -79,21 +79,21 @@
 
 
 	  
-		  <div class="panel panel-primary versesPanel" style="background-color:#f9f9f9">
-		        <div class="panel-heading panel-title">
+		  <div id ="versesPanel" class="panel panel-primary versesPanel ui-widget-content" style="background-color:#f9f9f9">
+		        <div id="versesPanelHeading" class="panel-heading panel-title">
 			        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="false" class="clickable">
-			       		<xsl:value-of select="document('Bulgarian.xml')/text/verses"/>
-			       		
-			        </a>
-			        
-			       
-		        
+			       		<xsl:value-of select="document('Bulgarian.xml')/text/verses"/>	       		
+			        </a>        
 		        </div>
 		        
 		         <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
 		        		<div id="verses" class="panel-body verses"></div>
 		        </div>
 		  </div>
+		  
+		  
+	
+		  
 	</div>
 
 
