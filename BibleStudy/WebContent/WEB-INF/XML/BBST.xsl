@@ -78,7 +78,6 @@
 	</div> 
 
 
-	  
 		  <div id ="versesPanel" class="panel panel-primary versesPanel ui-widget-content" style="background-color:#f9f9f9">
 		        <div id="versesPanelHeading" class="panel-heading panel-title">
 			        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="false" class="clickable">
@@ -90,10 +89,6 @@
 		        		<div id="verses" class="panel-body verses"></div>
 		        </div>
 		  </div>
-		  
-		  
-	
-		  
 	</div>
 
 

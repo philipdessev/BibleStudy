@@ -20,7 +20,7 @@ $(document).ready(function(){
 	 $('a.note').tooltip('hide'); 
 	 console.log("scroll");
 	});
-
+	
 	$("a.verse").click(function(){
 			$("a.clickable").addClass("in");
 			$("a.clickable").attr("aria-expanded","true");	
@@ -42,13 +42,13 @@ $(document).ready(function(){
 			  $.each( data, function( key, val ) {
 			    $("div.verses").append("<div id="+ val.OSISID +">" + val.OSISID.split(".")[2] + ". " + val.text + "</div>");
 			  });
-			  
-			   $('a.note').tooltip({ html: true, placement: "auto bottom" ,  show: 0, hide: 0, container: 'div.versesPanel'}); 
+
+			   $('a.note').tooltip({ html: true, placement: "bottom"}); 
 			 
 		});
 	});
 	
-		
+	
 	  $("#versesPanel").draggable({
 	    
 	  });
@@ -57,7 +57,6 @@ $(document).ready(function(){
   		$( "#versesPanel" ).removeAttr( 'style' );
   	
 	});
-		
 
 });
 ]]>
