@@ -69,7 +69,7 @@
       </div>
     </nav>
    
-<div class="container">
+<div class="container" id="mainContainer">
        
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">  
@@ -88,6 +88,8 @@
 		         <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
 		        		<div id="verses" class="panel-body verses"></div>
 		        </div>
+		        
+		        <div id="versesPanelFooting" class="panel-footer" style="background-color:#337ab7"><span class="glyphicons glyphicons-move"></span></div>
 		  </div>
 	</div>
 

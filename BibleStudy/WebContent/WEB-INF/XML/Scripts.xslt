@@ -1,16 +1,16 @@
 <xsl:stylesheet version="1.0"
-       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:template name="scripts">
-  
-  
+	<xsl:template name="scripts">
 
-<script src="resources/script/jquery-2.1.4.min.js"></script>
-<script src="resources/script/jquery-ui.min.js"></script>
-<script src="resources/script/jquery.ui.touch-punch.min.js"></script>
-<script src="resources/script/bootstrap.min.js"></script>
 
-<script>
+
+		<script src="resources/script/jquery-2.1.4.min.js"></script>
+		<script src="resources/script/jquery-ui.min.js"></script>
+		<script src="resources/script/jquery.ui.touch-punch.min.js"></script>
+		<script src="resources/script/bootstrap.min.js"></script>
+
+		<script>
 <![CDATA[
 var pathname = window.location.pathname; 
 
@@ -49,10 +49,19 @@ $(document).ready(function(){
 	});
 	
 	
-	  $("#versesPanel").draggable({
-	    
-	  });
+	$( '.verses' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
+    	var e0 = e.originalEvent,
+        delta = e0.wheelDelta || -e0.detail;
+    	this.scrollTop += ( delta < 0 ? 1 : -1 ) * 100;
+    	e.preventDefault();
+	});
 	
+	$("#versesPanel").draggable({
+	  containment: "window", 
+	  handle: "#versesPanelHeading, #versesPanelFooting",
+	  scroll: false 
+	});
+
 	$( window ).resize(function() {
   		$( "#versesPanel" ).removeAttr( 'style' );
   	
@@ -61,9 +70,9 @@ $(document).ready(function(){
 });
 ]]>
 
-</script>
-  
-  
-  </xsl:template>
-  
-  </xsl:stylesheet>
+		</script>
+
+
+	</xsl:template>
+
+</xsl:stylesheet>
