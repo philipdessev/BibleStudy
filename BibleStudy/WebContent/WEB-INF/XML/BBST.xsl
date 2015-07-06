@@ -69,7 +69,7 @@
       </div>
     </nav>
    
-<div class="container" id="mainContainer">
+<div class="container" id="mainContainer"> 
        
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">  
@@ -78,20 +78,21 @@
 	</div> 
 
 
-		  <div id ="versesPanel" class="panel panel-primary versesPanel ui-widget-content" style="background-color:#f9f9f9">
-		        <div id="versesPanelHeading" class="panel-heading panel-title">
-			        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="false" class="clickable">
-			       		<xsl:value-of select="document('Bulgarian.xml')/text/verses"/>	       		
-			        </a>        
-		        </div>
-		        
-		         <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
-		        		<div id="verses" class="panel-body verses"></div>
-		        </div>
-		        
-		        <div id="versesPanelFooting" class="panel-footer" style="background-color:#337ab7"><span class="glyphicons glyphicons-move"></span></div>
-		  </div>
-	</div>
+	 <div id ="versesPanel" class="panel panel-primary versesPanel ui-widget-content" style="background-color:#f9f9f9">
+	       <div id="versesPanelHeading" class="panel-heading panel-title">
+	        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="false" class="clickable">
+	       		<xsl:value-of select="document('Bulgarian.xml')/text/verses"/>	       		
+	        </a>        
+	       </div>
+	       
+	        <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+	       		<div id="verses" class="panel-body verses"></div>
+	       </div>
+	       
+	       <div id="versesPanelFooting" class="panel-footer" style="background-color:#337ab7"><span class="glyphicons glyphicons-move"></span></div>
+	 </div>
+	 
+</div>
 
 
 <xsl:call-template name = "scripts"/>
