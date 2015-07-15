@@ -72,7 +72,7 @@
 <div class="container" id="mainContainer"> 
        
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">  
+		<div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">   
 			<xsl:apply-templates/>
 		</div>
 	</div> 
@@ -89,7 +89,7 @@
 	       		<div id="verses" class="panel-body verses"></div>
 	       </div>
 	       
-	       <div id="versesPanelFooting" class="panel-footer" style="background-color:#337ab7"><span class="glyphicons glyphicons-move"></span></div>
+	       <div id="versesPanelFooting" class="panel-footer" style="background-color:#337ab7">x<span class="glyphicons1 glyphicons-move"></span>x</div>
 	 </div>
 	 
 </div>
